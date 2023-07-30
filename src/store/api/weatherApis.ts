@@ -1,7 +1,7 @@
 "use client";
 
 import {createApi, fetchBaseQuery} from "@reduxjs/toolkit/query/react";
-import {API_URL, OPEN_WEATHER_API_KEY} from "@/utils/api";
+import {API_URL, OPEN_WEATHER_API_KEY} from "@/settings";
 
 const weatherApis = createApi({
     reducerPath: "weather",

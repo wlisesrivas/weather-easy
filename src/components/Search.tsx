@@ -17,12 +17,14 @@ export default function Search({onSearch}: {onSearch: (search: string) => void})
         <form onSubmit={handleSubmit} className="flex items-center">
             <input className="p-4 w-full m-2 border border-gray-200 rounded"
                    value={search}
+                   tabIndex={1}
+                   autoFocus
                    onChange={(e) => setSearch(e.target.value)}
-                   placeholder="Type location here" />
+                   placeholder="Type Cyty, Country to search" />
             <Button style={'success'}
                     disabled={search.length < 3}
-                    className="flex"
-                    type={'submit'} rounded>Submit</Button>
+                    className="!py-6"
+                    type={'submit'}>Submit</Button>
         </form>
     );
 }
