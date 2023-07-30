@@ -1,5 +1,4 @@
 import className from 'classnames';
-import {GoSync} from "react-icons/go";
 
 interface ButtonProps {
     children: Element,
@@ -37,7 +36,7 @@ export default function Button(props: ButtonProps & {[key: string]: any}) {
         <button type={props.type || 'button'} {...props.rest}
                 className={classes}
                 disabled={props.loading || props.disabled}>
-            {props.loading ? <GoSync className="animate-spin"/> : props.children}
+            {props.loading ? '...' : props.children}
         </button>
     );
 }

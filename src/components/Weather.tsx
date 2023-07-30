@@ -7,7 +7,7 @@ export default function Weather({weather}: WeatherProps) {
     const today = new Date();
 
     const descriptions = weather.weather.map((item) => {
-        return <div className="text-sm text-gray-500">{item.description}</div>
+        return <div key={item.id} className="text-sm text-gray-500">{item.description}</div>
     })
 
     return (

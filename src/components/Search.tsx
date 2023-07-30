@@ -23,8 +23,8 @@ export default function Search({onSearch}: {onSearch: (search: string) => void})
                    placeholder="Type Cyty, Country to search" />
             <Button style={'success'}
                     disabled={search.length < 3}
-                    className="!py-6"
-                    type={'submit'}>Submit</Button>
+                    className="!py-6 mr-1"
+                    type={'submit'}>Search</Button>
         </form>
     );
 }
