@@ -7,11 +7,17 @@ export default function WeatherTempIcon({weather}: WeatherProps) {
     // https://openweathermap.org/weather-conditions
     // const weatherIcon = weather.weather[0].main.toLowerCase();
     const weatherIcon = weather.weather[0].icon;
-    const iconURL = `https://openweathermap.org/img/wn/${weatherIcon}@4x.png`;
+    const iconURL = `/img/${weatherIcon}.png`;
 
     return (
         <div className="flex flex-col">
-            <Image src={iconURL} width={128} height={75} alt={weatherIcon} />
+            <Image className="-mt-4"
+                   src={iconURL}
+                   alt={weatherIcon}
+                   blurDataURL={iconURL}
+                   width={92}
+                   height={92}
+                   placeholder="blur" />
         </div>
     );
 }
