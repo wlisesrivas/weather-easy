@@ -2,8 +2,15 @@
 const nextConfig = {
     reactStrictMode: true,
     images: {
-        domains: ["openweathermap.org"],
-    }
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: '**',
+                port: '',
+                pathname: '**',
+            },
+        ],
+    },
 }
 
 module.exports = nextConfig
