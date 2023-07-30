@@ -1,7 +1,8 @@
 import className from 'classnames';
+import React from "react";
 
 interface ButtonProps {
-    children: Element,
+    children: React.ReactNode,
     style: 'primary' | 'secondary' | 'success' | 'warning' | 'danger',
     type?: 'button' | 'submit',
     rounded?: boolean,
