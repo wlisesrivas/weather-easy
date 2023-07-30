@@ -8,6 +8,7 @@ interface ButtonProps {
     rounded?: boolean,
     outline?: boolean,
     loading?: boolean,
+    disabled?: boolean,
 }
 
 export default function Button(props: ButtonProps & {[key: string]: any}) {
@@ -28,11 +29,14 @@ export default function Button(props: ButtonProps & {[key: string]: any}) {
             'text-green-500': props.outline && props.style === 'success',
             'text-yellow-400': props.outline && props.style === 'warning',
             'text-red-500': props.outline && props.style === 'danger',
+            '!bg-gray-200 !text-gray-500 !border-gray-400': props.disabled,
         }
     );
 
     return (
-        <button type={props.type || 'button'} {...props.rest} className={classes} disabled={props.loading}>
+        <button type={props.type || 'button'} {...props.rest}
+                className={classes}
+                disabled={props.loading || props.disabled}>
             {props.loading ? <GoSync className="animate-spin"/> : props.children}
         </button>
     );
