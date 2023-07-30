@@ -4,7 +4,7 @@ This is a simple Weather App built with Next.js that allows users to get real-ti
 
 ## Demo
 
-You can try out the live demo of the Weather App [here](https://weather.codeasy.co).
+You can try out the live demo of the Weather App at https://weather-easy-wlisesrivas.vercel.app/.
 
 ## Features
 
