@@ -20,7 +20,7 @@ export default function Search({onSearch}: {onSearch: (search: string) => void})
                    tabIndex={1}
                    autoFocus
                    onChange={(e) => setSearch(e.target.value)}
-                   placeholder="Type Cyty, Country to search" />
+                   placeholder="Type City, Country to search" />
             <Button style={'success'}
                     disabled={search.length < 3}
                     className="!py-6 mr-1"

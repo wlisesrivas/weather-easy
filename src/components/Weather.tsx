@@ -7,13 +7,13 @@ export default function Weather({weather}: WeatherProps) {
     const today = new Date();
 
     const descriptions = weather.weather.map((item) => {
-        return <div key={item.id} className="text-sm text-gray-500">{item.description}</div>
+        return <div key={item.id} className="text-sm text-gray-500">{item.main} ({item.description})</div>
     })
 
     return (
         <div className="m-2 border border-gray-200 p-4 rounded rounded-b">
             <div className="mb-5 text-sm text-gray-500">
-                Results for <b>{weather.name}</b>
+                Results for <b>{weather.name}, {weather.sys.country}</b>
             </div>
             <div className="flex justify-around">
                 <WeatherTemp weather={weather} />

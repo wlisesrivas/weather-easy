@@ -11,7 +11,7 @@ export default function WeatherTempIcon({weather}: WeatherProps) {
 
     return (
         <div className="flex flex-col">
-            <Image src={iconURL} width={100} height={100} alt={weatherIcon} />
+            <Image src={iconURL} width={128} height={75} alt={weatherIcon} />
         </div>
     );
 }
