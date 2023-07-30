@@ -1,7 +1,5 @@
 # Weather App with Next.js
 
-![Weather App Screenshot](app_screenshot.png)
-
 This is a simple Weather App built with Next.js that allows users to get real-time weather information for a specific location. Users can enter a city or location name, and the app will fetch and display the current weather data, including temperature, weather conditions, humidity, and wind speed.
 
 ## Demo
