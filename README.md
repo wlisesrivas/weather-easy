@@ -2,6 +2,8 @@
 
 This is a simple Weather App built with Next.js that allows users to get real-time weather information for a specific location. Users can enter a city or location name, and the app will fetch and display the current weather data, including temperature, weather conditions, humidity, and wind speed.
 
+![weather-easy-demo.gif](public%2Fweather-easy-demo.gif)
+
 ## Demo
 
 You can try out the live demo of the Weather App at https://weather-easy-wlisesrivas.vercel.app/.
@@ -13,8 +15,10 @@ You can try out the live demo of the Weather App at https://weather-easy-wlisesr
 
 ## Tech Stack
 
-- **Next.js:** A React framework for server-side rendering and building web applications.
-- **Tailwind CSS:** A utility-first CSS framework for rapidly building modern websites.
+- **Next.js** A React framework for server-side rendering and building web applications.
+- **Tailwind CSS** A utility-first CSS framework for rapidly building modern websites.
+- **Redux Toolkit Query** a powerful data fetching and caching tool
+.
 
 ## Installation
 
